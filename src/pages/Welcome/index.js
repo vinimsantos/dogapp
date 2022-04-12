@@ -18,12 +18,12 @@ export default function Welcome() {
 
     return (
         <View style={styles.container}>
-        <View style={styles.logoContainer}>
+        <Animatable.View delay={600} animation="fadeInLeft" style={styles.logoContainer}>
             <Image
                 source={logo}
                 style={styles.imageProps}
             />
-        </View>
+        </Animatable.View>
 
 
         <View style={styles.containerLogo}>
